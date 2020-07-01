@@ -6,14 +6,24 @@
 
 // variables
 
-var a1=22;
-var a11=8;
-var a2= "beautiful"
+// var a1=22;
+// var a11=8;
+// var a2= "beautiful"
 
-document.write("<br>",a1+a11);
-document.write("<br>",a1+a2);
+// document.write("<br>",a1+a11);
+// document.write("<br>",a1+a2);
 
-console.log("this is console running")
+// console.log("this is console running")
 
-var age = prompt("Tell me your age");
-document.write("<br>","your age is ",age);
+// var age = prompt("Tell me your age");
+// document.write("<br>","your age is ",age);
+
+// simple app
+
+var foodcost = prompt("what is total amount?");
+
+document.write("The total cost of food was"," ",foodcost,"<br>");
+
+document.write("Each one of you has to pay"," ",(foodcost/8).toFixed(2),"<br>");  //toFixed(2) converts it to string nd then rounds up to 2 decimal digits
+
+
