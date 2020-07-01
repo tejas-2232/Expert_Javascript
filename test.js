@@ -20,11 +20,31 @@
 
 // simple app
 
-var foodcost = prompt("what is total amount?");
+/*var foodcost = prompt("what is total amount?");
 var no = prompt("enter number of your friends");
 
 document.write("The total cost of food was"," ",foodcost,"<br>");
 
 document.write("Each one of you has to pay"," ",(foodcost/no).toFixed(2),"<br>");  //toFixed(2) converts it to string nd then rounds up to 2 decimal digits
 
+*/
 
+//relational operator :  ==, !=, <,  > , <= , >=
+//logical operator: && || 
+
+var age = prompt("what is your age?");
+
+
+if(age<20 && age>=10)
+{
+    document.write("You go to school");
+
+}
+else if(age<10 && age>3)
+{
+    document.write("You also go to school");
+}
+else
+{
+    document.write("do whatever you want");   
+}
