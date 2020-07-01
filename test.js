@@ -69,3 +69,5 @@ else if(age>100 && age<=200)
 else{
     document.write("Have you taken weed?? sillyman");
 }
+
+document.write("you are beautiful anyway")
