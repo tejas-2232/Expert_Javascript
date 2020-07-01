@@ -21,9 +21,10 @@
 // simple app
 
 var foodcost = prompt("what is total amount?");
+var no = prompt("enter number of your friends");
 
 document.write("The total cost of food was"," ",foodcost,"<br>");
 
-document.write("Each one of you has to pay"," ",(foodcost/8).toFixed(2),"<br>");  //toFixed(2) converts it to string nd then rounds up to 2 decimal digits
+document.write("Each one of you has to pay"," ",(foodcost/no).toFixed(2),"<br>");  //toFixed(2) converts it to string nd then rounds up to 2 decimal digits
 
 
