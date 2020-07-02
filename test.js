@@ -34,7 +34,7 @@ document.write("Each one of you has to pay"," ",(foodcost/no).toFixed(2),"<br>")
 //relational operator :  ==, !=, <,  > , <= , >=
 //logical operator: && || 
 
-var age = prompt("what is your age?");
+/*var age = prompt("what is your age?");
 
 
 if(age<20 && age>=10)
@@ -73,5 +73,17 @@ else{
 }
 
 document.write("you are beautiful anyway")
+*/
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// About console and error & warning
+
+console.log("hello");
+
+console.time();
+
+console.log(5675+7567657);
+console.log(88465+9*84566);
+
+console.timeEnd()
