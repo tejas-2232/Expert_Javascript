@@ -38,3 +38,17 @@ const myobj={
 }
 
 console.log(myobj.Genre());
+console.log("---------------------------------------------");
+console.log("Learning about scope of functions");
+
+var i=255;           //global scope
+
+function ui(name3){
+    var i=7;
+    console.log("local scope",i);  // this i has only function level scope.
+    return `this is ${name3}. Happy coding`;
+}
+console.log(ui("tom"),i);
+
+//TIP: use more {let} and {const}, as it keeps your code more clean
+// and also they have global level scope and easy to read. 
