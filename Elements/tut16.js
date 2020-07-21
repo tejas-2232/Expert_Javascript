@@ -40,25 +40,31 @@ dd.appendChild(element2);
 
 
 //--------------------------------------------
-// Replacing element
-let elem2=document.createElement('h3');
 
+
+
+// Replacing element
+console.log('Replacing element');
+
+let elem2=document.createElement('h3');
 elem2.id='elem2';
 elem2.className='elem2';
+
 let tnode=document.createTextNode("this is created node for elem2");
 elem2.appendChild(tnode);
 
-
-element.replaceWith(elem2);
+element.replaceWith(elem2); //replacing element
 
 // removing element 
 let sc=document.getElementById('stt')
 console.log(sc);
-
 sc.removeChild(document.getElementById('ct'));  // removes cloud tech name
 
+
 //using getAttribute
+
 console.log('using getAttribute');
+
 let pr=elem2.getAttribute('id')
 console.log(elem2,pr);
 
@@ -68,3 +74,7 @@ console.log('returns true,= it tells that elem2 has class attribute');
 
 //elem2.removeAttribute('id') // removes id from that element
 
+// we ecan set the atribute for elem2
+
+elem2.setAttribute('title','this is elem2_Title');
+console.log(elem2);
