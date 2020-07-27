@@ -74,3 +74,9 @@ function deleteNote(index){
     showNotes();
 
 }
+
+let search = document.getElementById("searchTxt");
+
+search.addEventListener("input",function(){
+    console.log("Input Event fired ")
+})
