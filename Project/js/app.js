@@ -78,5 +78,13 @@ function deleteNote(index){
 let search = document.getElementById("searchTxt");
 
 search.addEventListener("input",function(){
-    console.log("Input Event fired ")
+    
+    let inputVal = search.value
+    console.log("Input Event fired ");
+
+    let noteCards= document.getElementsByClassName('notecard');
+    Array.from(noteCards).forEach(function(element){
+        let cardTxt = element.getElementsByTagName("p")[0];
+        console.log(cardTxt); // 4812
+    })
 })
