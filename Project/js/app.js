@@ -78,7 +78,7 @@ function deleteNote(index){
 let search = document.getElementById("searchTxt");
 search.addEventListener("input",function(){
     
-    let inputVal = search.value
+    let inputVal = search.value;
     // console.log("Input Event fired ",inputVal);
 
     let noteCards= document.getElementsByClassName('noteCard');
@@ -93,6 +93,6 @@ search.addEventListener("input",function(){
             element.style.display = "none";
         }
 
-        // console.log(cardTxt); // 4812
+        // console.log(cardTxt); // to see which card has the searched text
     })
 })
