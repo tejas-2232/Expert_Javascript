@@ -14,7 +14,7 @@ addBtn.addEventListener('click', function (e) {
     notesObj.push(addTxt.value);
     localStorage.setItem("notes", JSON.stringify(notesObj));
     addTxt.value = "";
-    console.log(notesObj);
+    // console.log(notesObj);
     showNotes();
 })
 
@@ -58,7 +58,7 @@ function showNotes() {
 // function to delete Note
 
 function deleteNote(index){
-    console.log("I am deleting",index);
+    // console.log("I am deleting",index);
 
     let notes= localStorage.getItem("notes");
     if(notes==null){
@@ -76,15 +76,23 @@ function deleteNote(index){
 }
 
 let search = document.getElementById("searchTxt");
-
 search.addEventListener("input",function(){
     
     let inputVal = search.value
-    console.log("Input Event fired ");
+    // console.log("Input Event fired ",inputVal);
 
-    let noteCards= document.getElementsByClassName('notecard');
+    let noteCards= document.getElementsByClassName('noteCard');
     Array.from(noteCards).forEach(function(element){
-        let cardTxt = element.getElementsByTagName("p")[0];
-        console.log(cardTxt); // 4812
+        let cardTxt = element.getElementsByTagName("p")[0].innerText;        
+        if(cardTxt.includes(inputVal)){
+            // if cardTxt includes search val text we want to search then block it
+            element.style.display= "block";
+        }
+        else{
+            //if cardTxt doesnt include the search val text then set it to none
+            element.style.display = "none";
+        }
+
+        // console.log(cardTxt); // 4812
     })
 })
