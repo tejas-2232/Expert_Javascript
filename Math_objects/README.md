@@ -1,4 +1,4 @@
-# All about Javascript math functions
+# <center> All about Javascript math functions </center>
 
 <img src="https://cdn.educba.com/academy/wp-content/uploads/2019/06/JavaScript-Math-Functions.jpg" > 
 
@@ -92,3 +92,4 @@ tan: function tan()
 tanh: function tanh()
 </ol>
    
+    
