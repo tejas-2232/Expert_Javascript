@@ -1,0 +1,1 @@
+console.log("Tutoral for math object in javascript")
