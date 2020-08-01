@@ -5,10 +5,6 @@
 
 <img src="https://www.c-sharpcorner.com/UploadFile/79037b/math-objects-in-javascript/Images/image1.gif" alt="math_objects_gif" 
     width="1000" height="500">
-<<<<<<< HEAD
-  
-  l
-=======
 
 
   1. E: 2.718281828459045
@@ -55,5 +51,4 @@
   42. tanh: function tanh()
 
    
->>>>>>> 3260e56e72a9cb1d29ccd471b379a06adbf6e8dd
     
