@@ -33,6 +33,43 @@ console.log('getHours',e);
 f=odate.getTime();
 console.log('numbser of seconds since 1JAN1970',f);
 
+
+g=odate.getMilliseconds();
+console.log('getMilliseconds',g);
+
+
+h=odate.getMonth();
+console.log('getMonth',h);
+
+I=odate.getDate();
+console.log('getDate',I);
+
+j=odate.setMonth(5); //june
+console.log('setMOnth',j);
+
+
+k=odate.setFullYear();
+console.log('setFullYear',k);
+
+
+l=odate.setMinutes();
+console.log('',l);
+
+
+m=odate.getMilliseconds();
+console.log('',m);
+
+
+n=odate.setMinutes();
+console.log('setMinutes',n);
+
+
+o=odate.setHours();
+console.log('setHours',o);
+
+p=odate.setSeconds();
+console.log('setSeconds',p)
+
 /* methods to try 
 odate.getMilliseconds()
 odate.getMonth()
@@ -42,5 +79,4 @@ odate.setFullYear()
 odate.setMinutes()
 odate.setHours()
 odate.setSeconds()
-
 */
