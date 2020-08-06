@@ -9,7 +9,16 @@ let divElem = document.createElement('div');
 
 // add text to that created element
 
-let text = document.createTextNode('This is my element. CLick to edit it');
+let val = localStorage.getItem('text');
+
+let text;
+
+if(val == null){
+  text = document.createTextNode('This is my element. CLick to edit it');
+}
+else{
+    text = document.createTextNode(val);
+}
 divElem.appendChild(text);
 
 // give id,style,class
@@ -47,6 +56,7 @@ divElem.addEventListener('click',function(){
     textarea.addEventListener('blur',function(){
 
         elem.innerHTML=  textarea.value;
+        localStorage.setItem('text',textarea.value);
     })    
 
 
