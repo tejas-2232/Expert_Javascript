@@ -62,5 +62,3 @@ divElem.addEventListener('click',function(){
 
 
 })
-
- /// use it for changes
