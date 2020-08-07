@@ -63,5 +63,4 @@ divElem.addEventListener('click',function(){
 
 })
 
-
- let textarea = document.getElementById('textarea');
+ /// use it for changes
