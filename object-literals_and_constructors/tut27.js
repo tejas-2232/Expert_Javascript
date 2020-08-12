@@ -23,7 +23,7 @@ function GeneralCar(cname, speed) {
 
     }
     this.analyze = function () {
-        console.log(`this car is running slower by ${200 - this.topSpeed} than Mercedez`)
+        console.log(`this car is running slower by ${200 - this.topSpeed}Km/h than Mercedez`)
 
     }
 }
