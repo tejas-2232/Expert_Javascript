@@ -22,3 +22,4 @@ Obj.prototype.setName = function (newName){
 let obj2 = new Obj("ben ten");
 console.log(obj2);
  
+
