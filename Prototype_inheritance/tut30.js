@@ -12,3 +12,11 @@ const proto={
     }
 
 }
+
+const tj = Object.create(proto)
+
+tj.name= 'Tommy'
+tj.role = "designer"
+
+tj.changeName('Rohn')  // name will update
+console.log(tj);
