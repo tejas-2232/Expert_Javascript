@@ -1,0 +1,16 @@
+*{
+    padding: 5px;
+    padding-left: 50;
+    background-color: black;
+
+}
+
+h2{
+    background-color: blanchedalmond;
+    flex-flow: column;
+}
+img{
+    padding-left: 50px;
+    padding-right: 50px;
+    border: 10px solid
+}
