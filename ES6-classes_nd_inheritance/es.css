@@ -10,7 +10,7 @@ h2{
     flex-flow: column;
 }
 img{
-    padding-left: 50px;
+    padding-left: 1px;
     padding-right: 50px;
     border: 10px solid
 }
