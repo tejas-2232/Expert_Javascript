@@ -15,12 +15,13 @@ function Display() {
 //add methods to display prototype
 
 
-// Add submit event listener
+// Add submit event listener to libraryform
+let libraryForm = document.getElementById('libraryForm');
+libraryForm.addEventListener('submit', libraryFormSubmit);
 
-
-
-
-    function fasd(name) {
-        return ` name of guest is ${this.name} `
-
+function libraryFormSubmit(){
+    console.log('You have successfully submitted library form');
 }
+
+
+    
