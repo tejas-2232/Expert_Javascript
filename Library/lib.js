@@ -10,7 +10,7 @@ class returnBook{
 
 class guests{
 
-    function ff(name) {
+    function fasd(name) {
         return ` name of guest is ${this.name} `       
     }
 }
