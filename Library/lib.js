@@ -1,16 +1,26 @@
-class Book{
+// constructor
+
+function Book(name, author, type) {
+    this.name = title;
+    this.author = author;
+    this.type = type;
+}
+
+// display constructor
+
+function Display() {
 
 }
 
-class returnBook{
-    return ` name of book to return is ${this.book} `    
-}
+//add methods to display prototype
+
+
+// Add submit event listener
 
 
 
-class guests{
 
     function fasd(name) {
-        return ` name of guest is ${this.name} `       
-    }
+        return ` name of guest is ${this.name} `
+
 }
