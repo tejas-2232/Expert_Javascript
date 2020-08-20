@@ -15,6 +15,16 @@ function Display() {
 //add methods to display prototype
 Display.prototype.add=function(book){
     console.log("Adding Book to Library");
+
+    tableBody - document.getElementById('tableBody')
+
+    let bookstring = `<tr>
+                        <td>${book.name}</td>
+                        <td>${book.author}</td>
+                        <td>${book.type}</td>                        
+                        </tr>`;
+    tableBody.innerHTML += bookstring; 
+
 }
 
 
@@ -54,7 +64,7 @@ function libraryFormSubmit(e){
 
     let display=new Display();
     display.add(book);
-    // display.clear();
+    display.clear();
 
     e.preventDefault();
 
