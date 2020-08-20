@@ -1,7 +1,6 @@
 console.log('welcome to Library');
 
 // constructor
-
 function Book(name, author, type) {
     this.name = name;
     this.author = author;
@@ -9,13 +8,20 @@ function Book(name, author, type) {
 }
 
 // display constructor
-
 function Display() {
 
 }
 
 //add methods to display prototype
+Display.prototype.add=function(book){
+    console.log("Adding Book to Library");
+}
 
+
+Display.prototype.clear=function(){
+    let libraryForm = document.getElementById('libraryForm');
+    libraryForm.reset();
+}
 
 // Add submit event listener to libraryform
 let libraryForm = document.getElementById('libraryForm');
@@ -26,13 +32,13 @@ function libraryFormSubmit(e){
     let name=document.getElementById('bookname').value;
     let author=document.getElementById('author').value;
     
-
+    // adding book sections
     let Fantasy= document.getElementById('Fantasy');
     let Biography=document.getElementById('Biography');
     let ComputerScience=document.getElementById('ComputerScience');
 
     let type;
-
+    // check if any book section is clicked or not
     if(Fantasy.checked){
         type=Fantasy.value;
     }
@@ -43,8 +49,13 @@ function libraryFormSubmit(e){
         type=ComputerScience.value;
     }
 
-    let sd = new Book(name, author,type);
-    console.log(sd);
+    let book = new Book(name, author,type);
+    console.log(book);
+
+    let display=new Display();
+    display.add(book);
+    // display.clear();
+
     e.preventDefault();
 
 
