@@ -63,8 +63,16 @@ function libraryFormSubmit(e){
     console.log(book);
 
     let display=new Display();
-    display.add(book);
-    display.clear();
+
+    if(display.validate(book)){
+        display.add(book);
+        display.clear();
+        display.show("SUCCESS");
+    }
+    else(
+        // show erroe to user
+        display.show('ERROR');
+    )
 
     e.preventDefault();
 
