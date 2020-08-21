@@ -43,15 +43,17 @@ Display.prototype.validate = function (book) {
     }
 }
 
-Display.prototype.show = function (type,displayMessage) {
+Display.prototype.show = function (type, displayMessage) {
     let message = document.getElementById('message');
-
     message.innerHTML = `<div class="alert alert-${type} alert-dismissible fade show" role="alert">
                             <strong>Message:</strong> ${displayMessage}
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                             </button>
-                        </div>`
+                        </div>`;
+    setTimeout(function () {
+        message.innerHTML = " "
+    }, 2000);
 
 }
 
@@ -89,11 +91,11 @@ function libraryFormSubmit(e) {
     if (display.validate(book)) {
         display.add(book);
         display.clear();
-        display.show("SUCCESS","your book has been successfully added");
+        display.show("SUCCESS", "your book has been successfully added");
     }
     else (
         // show erroe to user
-        display.show('danger','sorry you cannot add this book') 
+        display.show('danger', 'sorry you cannot add this book')
     )
 
     e.preventDefault();
