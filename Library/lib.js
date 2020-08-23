@@ -16,7 +16,7 @@ function Display() {
 Display.prototype.add = function (book) {
     console.log("Adding Book to Library");
 
-    tableBody - document.getElementById('tableBody')
+    let tableBody = document.getElementById('tableBody')
 
     let bookstring = `<tr>
                         <td>${book.name}</td>
@@ -31,7 +31,7 @@ Display.prototype.add = function (book) {
 Display.prototype.clear = function () {
     let libraryForm = document.getElementById('libraryForm');
     libraryForm.reset();
-}
+} 
 
 // Implement the validate function
 Display.prototype.validate = function (book) {
