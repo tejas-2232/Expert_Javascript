@@ -1,0 +1,1 @@
+console.log("AJAX tutorial in one GO")
