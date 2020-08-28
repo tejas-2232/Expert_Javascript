@@ -1,0 +1,5 @@
+language_first:javascript
+
+job: sr.developer
+
+salary:55k
