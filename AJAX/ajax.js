@@ -1,3 +1,4 @@
+// Do exercise for fruit and vegetables from harry bhai
 console.log("AJAX tutorial in one GO")
 
 let fetchBtn = document.getElementById('fetchBtn');
@@ -86,5 +87,6 @@ function popHandler(){
 
 
 }
+
 
 
