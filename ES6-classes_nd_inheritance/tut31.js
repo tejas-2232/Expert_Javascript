@@ -1,4 +1,4 @@
-console.log('Wwelcome to tut31')
+console.log('Welcome to tut31')
 
 class Employee{
     constructor(givenName,givenExperience,givenDivision){
