@@ -10,10 +10,11 @@ const students = [
 
 // create two functions
 
-function enrollStudent(student){
+function enrollStudent(student,callback){
     setTimeout(function() {
         students.push(student);
-        console.log('student has been enrolled');       
+        console.log('student has been enrolled'); 
+        callback();      
     }, 3000);
 }
 
@@ -31,11 +32,15 @@ function getStudents(){
         document.getElementById('students').innerHTML = str;
         console.log('student data has been fetched');       
 
-    }, 1000);
+    }, 5000);
 }
 
 
 let newstudent = {name:"john", subject: "Machine algo"};
 
-enrollStudent(newstudent);
-getStudents();
+enrollStudent(newstudent,getStudents);
+// getStudents();
+
+// callback functiona may be synchronous or asynchronous
+// e.g. forEach is synchronous 
+
