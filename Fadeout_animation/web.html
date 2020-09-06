@@ -16,8 +16,22 @@
     }
 
     function show(){
+        var img = document.getElementById('img1');
+        //fetch the opacity
+        opacity = Number(window.getComputedStyle(img).getPropertyValue('opacity')); // converting string to number
         
-    }
+        if(opacity<1){
+
+            opacity=opacity+0.1;
+            img.style.opacity= opacity // set the opacity
+            console.log(opacity);
+        }
+        else
+        {
+            clearInterval(intervalID);
+        }
+    }        
+    
     
     // entire coding of animation
     function hide(){
@@ -29,6 +43,8 @@
 
             opacity=opacity-0.1;
             img.style.opacity= opacity // set the opacity
+            console.log(opacity);
+
         }
         else
         {
