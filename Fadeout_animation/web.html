@@ -7,6 +7,36 @@
     var opacity = 0;
     var intervalID = 0;
 
+    function fadeOut(){
+        intervalID = setInterval(hide,200);
+    }
+    
+    function fadeIn(){
+        intervalID = setInterval(show,200);
+    }
+
+    function show(){
+        
+    }
+    
+    // entire coding of animation
+    function hide(){
+        var img = document.getElementById('img1');
+        //fetch the opacity
+        opacity = Number(window.getComputedStyle(img).getPropertyValue('opacity')); // converting string to number
+        
+        if(opacity>0){
+
+            opacity=opacity-0.1;
+            img.style.opacity= opacity // set the opacity
+        }
+        else
+        {
+            clearInterval(intervalID);
+        }
+    }
+
+
     </script>
     
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +45,7 @@
 <body>
     <button onclick="fadeOut()" id="btnAdd" >Fade out </button>
     <hr>
-    <img src="" id="img1">
+    <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQQvSto5YKNA0PwG-vSReY18v6ohPl01Nfr6g&usqp=CAU" id="img1">
 
     <hr>
 
