@@ -5,6 +5,7 @@ function validate(){
     
     var username = document.getElementById("uname").value;
     var regx = /E00/;
+    // if u want case insensitivity use regx= /E00/i ; 
 
 
     //test = Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
