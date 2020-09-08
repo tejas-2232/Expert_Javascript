@@ -5,11 +5,11 @@ function validate(){
     // regular expression are treated as object in javascript
     
     var text = document.getElementById("text1").value;
-    var regx = /[7-9][0-9]{9}/;
+    var regx = /^[7-9][0-9]{9}$/;
     
 
     //test = Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
-    if(regx.test(regx))
+    if(regx.test(text))
     {
         console.log('Number valid');
         document.getElementById('text22').innerHTML="Valid Number";
