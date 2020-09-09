@@ -9,7 +9,7 @@ function validate(){
     var email = document.getElementById("em1").value;
 
     // var regx = /\w[@][a-z][.]^[com|co][.]^[in]/;
-     var regx= /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9\-]+).([a-z]{2,10}).([a-z]{2,10})$/
+     var regx= /^([a-zA-Z0-9\.-]+)@([a-zA-Z0-9\-]+).([a-z]{2,10}).([a-z]{2,10})?$/
     
 
     //test = Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
