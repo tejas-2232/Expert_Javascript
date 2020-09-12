@@ -13,13 +13,19 @@
 	<p>This is a short para regarding the Jquery selectors</p>
 </div>
 <button onclick="fn1()" id="btn1" > click ME </button>
- 
+<hr>
+
+<button onclick="fn2()" id="btn2" >  Fade Heading </button>
+
 </body>
 
 <script>
 	function fn1()
 	{
   		$('.myclass').fadeToggle(2000);
+	}
+	function fn2(){
+		$('.heading').fadeToggle(1500);
 	}
 </script>
 
