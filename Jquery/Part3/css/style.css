@@ -1,3 +1,11 @@
-.mydivs{
+#firstdiv{
     color: chartreuse;
 } 
+
+#seconddiv{
+    color: crimson;
+}
+
+#thirddiv{
+    color: dodgerblue;
+}
