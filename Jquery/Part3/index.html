@@ -1,62 +1,72 @@
 <html>
+
 <head>
 	<title>Expert_javascript</title>
-	<link rel="stylesheet" href="css/style.css">	
+	<link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<h2 class="myheading" > Jquery is easy  </h2>
+	<h2 class="myheading"> Jquery is easy </h2>
 
-<div id="firstdiv" class="mydivs">
-	<p>This is first para of first div</p>
-	<p>This is second para of first div</p>
-	<p>This is third para of first div</p>
-</div>
+	<div id="firstdiv" class="mydivs">
+		<p>This is first para of first div</p>
+		<p>This is second para of first div</p>
+		<p>This is third para of first div</p>
+	</div>
 
-<div id="seconddiv" class="mydivs" >
-	<p>this is third para in second div</p>
-</div>
+	<div id="seconddiv" class="mydivs">
+		<p>this is third para in second div</p>
+	</div>
 
-<div id="thirddiv" class="mydivs" >
-	<p>this is third Div</p>
-	<ol>
-		<li>Machine Learning</li>
-		<li>cyber security</li>
-		<li>cloud computing</li>
-		<li> soft computing</li>
+	<div id="thirddiv" class="mydivs">
+		<p>this is third Div</p>
+		<ol>
+			<li>Machine Learning</li>
+			<li>cyber security</li>
+			<li>cloud computing</li>
+			<li> soft computing</li>
 
-	</ol>
-</div>
+		</ol>
+	</div>
+
+	<div class="container">
 
 
+		<button onclick="fn1()" id="btn1"> {DIV 1} </button>
+		<!--faded away First  div by ID selector -->
+		<button onclick="fn2()" id="btn2"> {DIV 2} </button>
+		<!--faded away second div by ID selector -->
+		<button onclick="fn3()" id="btn3"> {DIV 3} </button>
+		<!--faded away Third  div by ID selector -->
+		<button onclick="fn4()" id="btn4"> {All DIV} </button>
+		<!--faded away all div by class selector -->
 
-<button onclick="fn1()" id="btn1" > {DIV 1} </button>    <!--faded away First  div by ID selector -->
-<button onclick="fn2()" id="btn2" > {DIV 2} </button>    <!--faded away second div by ID selector -->
-<button onclick="fn3()" id="btn3" > {DIV 3} </button>    <!--faded away Third  div by ID selector -->
-<button onclick="fn4()" id="btn4" > {All DIV} </button>  <!--faded away all div by class selector -->
+
+	</div>
+
 
 </body>
 
 <script>
-	function fn1(){
+	function fn1() {
 		$('#firstdiv').fadeToggle(1500);
-	
+
 	}
-	function fn2(){
+	function fn2() {
 		$('#seconddiv').fadeToggle(2000);
 	}
 
-	function fn3()
-	{
-  		$('#thirddiv').fadeToggle(3000);
+	function fn3() {
+		$('#thirddiv').fadeToggle(3000);
 	}
-	
-	function fn4()
-	{
-  		$('.mydivs').fadeToggle(3500);
+
+	function fn4() {
+		$('.mydivs').fadeToggle(3500);
 	}
 </script>
 
-<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+	crossorigin="anonymous"></script>
+
 </html>
