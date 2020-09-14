@@ -23,26 +23,32 @@
 	<ol>
 		<li>Machine Learning</li>
 		<li>cyber security</li>
-
 		<li>cloud computing</li>
 		<li> soft computing</li>
 
 	</ol>
 </div>
 
-<button onclick="fn1()" id="btn1" > click ME </button>
-<hr>
+<button onclick="fn1()" id="btn1" > {DIV 1} </button>
+<button onclick="fn2()" id="btn1" > {DIV 2} </button>
+<button onclick="fn3()" id="btn1" > {DIV 3} </button>
 
 </body>
 
 <script>
-	function fn1()
-	{
-  		$('#thirddiv').fadeToggle(2000);
+	function fn1(){
+		$('#firstdiv').fadeToggle(1500);
+	
 	}
-	// function fn2(){
-	// 	$('.heading').fadeToggle(1500);
-	// }
+	function fn2(){
+		$('#seconddiv').fadeToggle(2000);
+	}
+
+	function fn3()
+	{
+  		$('#thirddiv').fadeToggle(3000);
+	}
+	
 </script>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
