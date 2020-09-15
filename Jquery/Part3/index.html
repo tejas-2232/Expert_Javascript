@@ -25,9 +25,10 @@
 			<li>Machine Learning</li>
 			<li>cyber security</li>
 			<li>cloud computing</li>
-			<li> soft computing</li>
-
 		</ol>
+	</div>
+	<div id="image_div" class="iop">
+		<img src="https://www.carlogos.org/logo/Mercedes-Benz-emblem-1926-1920x1080.png" width="585" height="350">
 	</div>
 
 	<div class="container">
@@ -41,6 +42,8 @@
 		<!--faded away Third  div by ID selector -->
 		<button onclick="fn4()" id="btn4"> {All DIV} </button>
 		<!--faded away all div by class selector -->
+		<button onclick="fn5()" id="btn5"> {Mer Benz} </button>
+		<!--faded away all div by selector -->
 
 
 	</div>
@@ -63,6 +66,10 @@
 
 	function fn4() {
 		$('.mydivs').fadeToggle(3500);
+	}
+
+	function fn5() {
+		$('img').fadeToggle(3500);
 	}
 </script>
 
