@@ -22,16 +22,13 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-md-7">
+            <div class="col-md-7 offset-md-3">
                 <h1 class="display-5 text-center mb-3">Weight converter</h1>
 
                 <form>
                     <div class="form-group">
-                        <input 
-                        id="lbs-input"
-                        type="number"
-                        class="form-control form-control-lg" 
-                        placeholder="Enter pounds">
+                        <input id="lbs-input" type="number" class="form-control form-control-lg"
+                            placeholder="Enter lbs">
                     </div>
                 </form>
 
@@ -64,10 +61,19 @@
     </div>
 
     <script>
-        document.getElementById("lbs-input").addEventListener('input',function(e) {
-            let pounds= e.target.value;
-            
-        } )
+        document.getElementById("output").style.visibility = "hidden";
+
+        document.getElementById("lbs-input").addEventListener('input', function (e) 
+        {
+            document.getElementById("output").style.visibility = "visible";
+
+            let lbs = e.target.value;
+            document.getElementById("gramsOutput").innerHTML = lbs / 0.0022046; //grams
+
+            document.getElementById("kgOutput").innerHTML = lbs / 2.205;  // kilogram
+
+            document.getElementById("ozOutput").innerHTML = lbs * 16;  //ounces 
+        })
     </script>
 </body>
 
