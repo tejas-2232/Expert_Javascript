@@ -8,10 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    
     <style>
         body {
             margin-top: 70px;
-            background: #333;
+            background: rgb(17, 17, 17);
             color: #fff;
         }
     </style>
@@ -23,12 +27,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7 offset-md-3">
-                <h1 class="display-5 text-center mb-3">Weight converter</h1>
+                <h1 class="display-5 text-center mb-3">Weight Converter</h1>
 
                 <form>
                     <div class="form-group">
                         <input id="lbs-input" type="number" class="form-control form-control-lg"
-                            placeholder="Enter lbs">
+                            placeholder="Enter weight in lbs">
                     </div>
                 </form>
 
@@ -59,22 +63,43 @@
             </div>
         </div>
     </div>
+    <br><br><br>
+    <div class="icons">
+        <a href="https://www.linkedin.com/in/tejas-bachhav-576798168/" class="fa fa-linkedin "></a>
+        <a href="https://www.github.com/tejas-2232" class="fa fa-github "></a>
+        <a href="https://twitter.com/bachhav_tejas" class="fa fa-twitter "></a>
 
-    <script>
-        document.getElementById("output").style.visibility = "hidden";
+        
+      </div>
+      <style>
+          .fa {
+      padding: 5px;
+      margin-left: 240pt;
+      font-size: 40px;
+      width: 30px;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 80%;
+    }
+      </style>
+<br>
+   <!-- Footer -->
+<footer class="page-footer font-small blue">
 
-        document.getElementById("lbs-input").addEventListener('input', function (e) 
-        {
-            document.getElementById("output").style.visibility = "visible";
+    
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> Copyright © 2020 Tejas Bachhav
+      <!-- <a href="https://www.github.com/tejas-2232"> GitHub</a> -->
+    <br> More projects coming soon
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+ 
+ <!-- Add font awesome icons -->
 
-            let lbs = e.target.value;
-            document.getElementById("gramsOutput").innerHTML = lbs / 0.0022046; //grams
-
-            document.getElementById("kgOutput").innerHTML = lbs / 2.205;  // kilogram
-
-            document.getElementById("ozOutput").innerHTML = lbs * 16;  //ounces 
-        })
-    </script>
+    <script src="weight.js"></script>
 </body>
 
 </html>
